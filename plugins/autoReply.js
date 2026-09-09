@@ -86,7 +86,7 @@ async (message, match) => {
 
 try {
 
-const command = (match || "").trim().toLowerCase();
+const command = String(match || "").trim().toLowerCase();
 
 // -----------------------------
 // HELP
